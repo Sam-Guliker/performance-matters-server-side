@@ -9,7 +9,6 @@ fork the repo:
 
 ```
 git clone https://github.com/cmda-minor-web/performance-matters-server-side
-
 ```
 
 ### Yeoman
@@ -30,7 +29,8 @@ run it
 yo express
 ```
 
-yeoman will give you different options to build your project.
+Yeoman will give you different options to build your project.
+
 ![yoexpress](images/yoexpress.png)
 
 #### Features of Yeoman
@@ -58,6 +58,7 @@ yeoman will give you different options to build your project.
 
 ## Npm scripts
 Running gulp
+
 ![npm scripts](images/npmstart.png)
 
 ```
