@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(action ='/search' method='post')
+    label(for='search') Search a building!
+    input(id='searchItems' name='search' type='text')
