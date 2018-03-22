@@ -9,7 +9,6 @@ const pug = require('pug')
 
 // My modules
 const routes = require('./routes/index');
-const users = require('./routes/user');
 const data = require('./modules/data')
 
 //Express
@@ -32,15 +31,7 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use((req, res ,next) => {
-  res.locals.h = (obj) => JSON.stringify(obj, null, 2);
-  next();
-})
-
 app.use('/', routes);
-app.use('/users', users);
-// app.use('/movies', movies)
-
 /// catch 404 and forward to error handler
 app.use((req, res, next) => {
     const err = new Error('Not Found');

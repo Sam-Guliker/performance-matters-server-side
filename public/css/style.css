@@ -17,8 +17,9 @@ ul li{
   transition:0.2s all ease-in-out;
 }
 ul li:hover{
-  color:purple;
+  background-color:#96D7AC;
   transform: scale(1.1);
+  box-shadow: none;
 }
 section{
     margin:auto;
