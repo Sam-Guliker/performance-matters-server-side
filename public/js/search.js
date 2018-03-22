@@ -2,6 +2,8 @@
   const searchItem = document.createElement('input')
   const container = document.querySelector('ul')
 
+  searchItem.placeholder ="Zoek een gebouw"
+
   container.prepend(searchItem)
 
   searchItem.addEventListener('keyup', function(e){
