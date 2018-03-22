@@ -5,22 +5,24 @@ const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const pug = require('pug')
 
 // My modules
 const routes = require('./routes/index');
 const users = require('./routes/user');
+const movies = require('./routes/movies')
+const data = require('./modules/data')
 
 //Express
 const app = express();
 
-// Enviorment
 const env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(logger('dev'));
@@ -33,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+// app.use('/movies', movies)
 
 /// catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -43,7 +46,6 @@ app.use((req, res, next) => {
 
 /// error handlers
 
-// development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use((err, req, res, next) => {

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{data[0].title}
+  
+  ul
+    each el in data
+      p= el.id
+      li
+        a(href="./detail/"+el.id)= el.title
+        //- a(href=`detail/${el.id}`)= el.title
+  
+  
+  
+
+  //- form(action ='/search' method='post')
+  //-   label(for='search') Search a building!
+  //-   input(id='searchItems' name='search' type='text')
