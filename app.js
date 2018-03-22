@@ -10,7 +10,6 @@ const pug = require('pug')
 // My modules
 const routes = require('./routes/index');
 const users = require('./routes/user');
-const movies = require('./routes/movies')
 const data = require('./modules/data')
 
 //Express
@@ -32,6 +31,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use((req, res ,next) => {
+  res.locals.h = (obj) => JSON.stringify(obj, null, 2);
+  next();
+})
 
 app.use('/', routes);
 app.use('/users', users);

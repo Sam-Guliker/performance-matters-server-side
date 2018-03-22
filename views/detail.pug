@@ -1,4 +1,7 @@
 extend layout
 
 block content
-  h1= title
+  section
+    h1= data.title.value
+    img(src= data.img.value)
+    p= data.description.value
