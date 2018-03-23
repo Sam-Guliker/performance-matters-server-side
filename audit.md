@@ -29,6 +29,6 @@ Testing with lightouse:
 
 ## Speed:
 ### Without compression
-![network](images/network.png)
-### With compression
 ![network](images/networkwith.png)
+### With compression
+![network](images/network.png)
