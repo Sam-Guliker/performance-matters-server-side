@@ -80,6 +80,21 @@ I've got some enhancement with the client side.
 When you got javascript turned on you can use the search input.  
 ![clientside](images/clientside.png)
 
+## Compression
+Node .js compression middleware  
+* deflate
+* gzip
+
+Compression:
+```
+npm install compression
+```
+
+API:
+```
+var compression = require('compression')
+```
+
 ## What's up next?
 ### Data
 I have a lot of duplicates in my data I'd like to combine  
