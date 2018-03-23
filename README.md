@@ -1,5 +1,5 @@
 # performance-matters-server-side
-Assignment: What is the core functionality, and how can I render it server-side?
+Assignment: What is the core functionality of my OBA app, and how can I render it server-side?
 
 The site must contain an overview page and detail page.
 
@@ -65,4 +65,34 @@ Running gulp
 npm start
 ```
 
-## Node Features
+## Server-side
+file structure  
+![filestructure](images/filestructure.png)
+
+## Browserify
+I've build some the build.js file in browserify, I just dont know
+how to run it with local host yet.  
+![package](images/packagejson.png)
+
+## Client Side
+I've got some enhancement with the client side.  
+When you got javascript turned on you can use the search input.  
+![clientside](images/clientside.png)
+
+## What's up next?
+### Data
+I have a lot of duplicates in my data I'd like to combine  
+them and push them into an `array`
+
+### Routing
+I had my routing fixed but unfortunately I couldn't get my fetch  
+into an module. So I just used one router instead. :eyes:
+
+### Features
+* [Express](https://expressjs.com/)
+* [Pug](https://pugjs.org/api/getting-started.html)
+* [Path](https://nodejs.org/api/path.html)
+* [bodyParser](https://github.com/expressjs/body-parser)
+
+### License
+Copyright © 2018 Sam Guliker. Released under the [MIT license](https://opensource.org/licenses/MIT)
