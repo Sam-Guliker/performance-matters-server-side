@@ -1,5 +1,6 @@
 # performance-matters-server-side
-Assignment: What is the core functionality of my OBA app, and how can I render it server-side?
+Assignment: What is the core functionality of my OBA app, and how can I render it server-side?  
+![application](images/app.png)
 
 The site must contain an overview page and detail page.
 
@@ -82,7 +83,10 @@ When you got javascript turned on you can use the search input.
 ## What's up next?
 ### Data
 I have a lot of duplicates in my data I'd like to combine  
-them and push them into an `array`
+them and push them into an `array`.
+
+me trying really hard to fix that #$@!
+![datacleaning](images/datacleaning.png)
 
 ### Routing
 I had my routing fixed but unfortunately I couldn't get my fetch  
