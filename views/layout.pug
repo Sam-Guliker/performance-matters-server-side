@@ -6,6 +6,17 @@ html(lang='nl')
     title= title
     block css
       link(rel='stylesheet', href='/css/style.css')
+      link(rel='manifest', href='/manifest.json')
   body
     block content
-    script(src='/dist/bundle.js')
+    script.
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+              .then(function(registration) {
+                  console.log('Yay')
+              }).catch(function(err) {
+                  console.log('Nope')
+              });
+      } else {
+          console.log('No support for service workers omg')
+      }

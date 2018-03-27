@@ -1,0 +1,10 @@
+{
+  "name": "performance-matters-server-side",
+  "short_name": "Performance",
+  "description": null,
+  "dir": "auto",
+  "lang": "en-US",
+  "display": "standalone",
+  "start_url": "/?homescreen=1",
+  "background_color": "#fff"
+}

@@ -1,15 +1,16 @@
 var searchItems = function(){
-  const searchItem = document.createElement('input')
+  const searchInput = document.createElement('input')
   const container = document.querySelector('ul')
+  
 
-  searchItem.placeholder ="Zoek een gebouw"
+  searchInput.placeholder ="Zoek een gebouw"
 
-  container.prepend(searchItem)
+  container.prepend(searchInput)
 
-  searchItem.addEventListener('keyup', function(e) {
+  searchInput.addEventListener('keyup', function(e) {
     	let filter, ul, li, a, i;
 
-    	filter = searchItem.value.toLowerCase();
+    	filter = searchInput.value.toLowerCase();
     	li = container.getElementsByTagName('li');
 
     	for (i = 0; i < li.length; i++) {
@@ -22,5 +23,7 @@ var searchItems = function(){
     	}
     })
 }
+
+searchItems()
 
 module.exports = searchItems
