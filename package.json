@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon ./bin/www",
-    "build": "browserify public/js/search.js -o public/dist/bundle.js",
+    "build": "browserify public/js/index.js > public/dist/bundle.js",
     "test": "mocha --recursive test",
     "test:coverage": "nyc npm test",
     "test:unit": "mocha --recursive test/middleware test/models test/routes",

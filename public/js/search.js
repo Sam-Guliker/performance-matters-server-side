@@ -1,4 +1,4 @@
-(function(){
+var searchItems = function(){
   const searchItem = document.createElement('input')
   const container = document.querySelector('ul')
 
@@ -21,5 +21,6 @@
     		}
     	}
     })
+}
 
-}())
+module.exports = searchItems
