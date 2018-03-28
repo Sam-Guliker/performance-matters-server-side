@@ -107,6 +107,9 @@ them and push them into an `array`.
 me trying really hard to fix that #$@!
 ![datacleaning](images/datacleaning.png)
 
+### Https
+for the last 100% on the [audit](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/audit.md) I can add the HTTPS.
+
 ### Routing
 I had my routing fixed but unfortunately I couldn't get my fetch  
 into an module. So I just used one router instead. :eyes:

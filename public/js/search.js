@@ -1,13 +1,14 @@
 var searchItems = function(){
   const searchInput = document.createElement('input')
   const container = document.querySelector('ul')
-  const label = document.querySelector('label')
+  const label = document.createElement('label')
+  const section = document.querySelector('section')
 
-  label.innerHTML = "U kunt hier een gebouw zoeken"
+  label.textContent = "U kunt hier een gebouw zoeken"
   searchInput.placeholder ="De Dam"
 
-  container.prepend(searchInput)
-
+  section.append(label)
+  label.append(searchInput)
 
   searchInput.addEventListener('keyup', function(e) {
     	let filter, ul, li, a, i;
