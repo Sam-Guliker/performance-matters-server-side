@@ -3,7 +3,7 @@ Assignment: What is the core functionality of my OBA app, and how can I render i
 
 [Link to audit](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/audit.md)  
 [Link to the user story](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/userstory.md)
-![application](images/app.png)
+![application](images/explain.gif)
 
 The site must contain an overview page and detail page.
 
@@ -82,6 +82,22 @@ how to run it with local host yet.
 I've got some enhancement with the client side.  
 When you got javascript turned on you can use the search input.  
 ![clientside](images/clientside.png)
+
+## **Update**
+I added a module file, with this it will bring more structure for client-side javascript.
+
+### Structure
+![jsmodule](images/jsmodule.png)  
+
+### Bundlejs
+![bundlejs](images/bundlejs.png)
+
+### Progressive Web Apps (PWA)
+With PWA you have access to native qualities in browsers :open_mouth:  
+I've added the service workers and the manifest to the website.
+
+### How my service worker work
+On the first time the browser connects to the webpage it will cache  the basic functionality to the service worker. The next time you will visit the webpage(offline) you will get the same content as before.  The next time the app will go online the service worker will  check if there is anything to update for the offline version.
 
 ## What's up next?
 ### Data
