@@ -1,8 +1,9 @@
 # performance-matters-server-side
 Assignment: What is the core functionality of my OBA app, and how can I render it server-side?  
 
-[Link to audit](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/audit.md)  
-[Link to the user story](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/userstory.md)
+- [Link to audit](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/audit.md)  
+- [Link to the user story](https://github.com/Sam-Guliker/performance-matters-server-side/blob/update/userstory.md)
+
 ![application](images/explain.gif)
 
 The site must contain an overview page and detail page.

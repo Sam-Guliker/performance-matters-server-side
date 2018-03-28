@@ -40,11 +40,11 @@ At some point I added the label and input into the `ul`.  The accessibility drop
 
 ![acess](images/accessibility.png)
 
+## Progressive Web Apps
+Added the manifest and favicons.
+![seo](images/seo.png)
+
 ## SEO
 Added favicon and meta tags for SEO.  
 [googledev](https://developers.google.com/web/tools/lighthouse/audits/description)
 ![PWA](images/thatperformancetho.png)
-
-## Progressive Web Apps
-Added the manifest and favicons.
-![seo](images/seo.png)
